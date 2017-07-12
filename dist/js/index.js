@@ -1,0 +1,1 @@
+var app=angular.module("app",[]);app.controller("AppController",["$scope",function(t){t.appTitle="今日一刻"}]),app.directive("navs",function(){return{restrict:"EA",templateUrl:"../views/nav_tpl.html"}}),app.directive("tabbar",function(){return{restrict:"EA",templateUrl:"../views/tabbar_tpl.html"}});
