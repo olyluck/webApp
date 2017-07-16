@@ -1,0 +1,33 @@
+<div>
+    <!--点击到详情-->
+    <div class="home_list">
+        <div class="home_content" ui-sref="index.detail({id:key})" ng-repeat="(key,list) in homeData.posts">
+            <p class="tag" ng-bind="list.column.name" ng-show="list.column.name">洗洗睡</p>
+            <h3 ng-bind="list.title"></h3>
+
+            <!--内容有三种样式-->
+            <!--post1:只有文字-->
+            <!--post2:文字+图片-->
+            <!--post3:只有图片-->
+
+            <div class="post1" ng-if="list.display_style == 10001">
+                <p ng-bind="list.abstract"></p>
+            </div>
+
+            <div class="post2 clearfix" ng-if="list.display_style == 10002">
+                <p class="fl" ng-bind="list.abstract"></p>
+                <img class="fr" src="https://img3.doubanio.com/view/presto/small/public/530766.jpg" alt="">
+            </div>
+
+            <div class="post3" ng-if="list.display_style == 10003">
+                <ul>
+                    <li><img src="../images/home/post_3.png" alt=""></li>
+                    <li><img src="../images/home/post_4.png" alt=""></li>
+                    <li><img src="../images/home/post_5.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>

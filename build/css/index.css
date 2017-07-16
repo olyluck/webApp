@@ -398,7 +398,9 @@ ul {
   background-color: lightseagreen;
   line-height: 1.70666667rem;
   color: #ffffff;
-  position: relative;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
 }
 .navs p {
   text-align: center;
@@ -416,6 +418,7 @@ ul {
   position: fixed;
   bottom: 0rem;
   left: 0rem;
+  background-color: #fff;
   border-top: 1px solid #ccc;
 }
 .tabbar ul {
@@ -428,6 +431,62 @@ ul {
 .tabbar ul li img {
   width: 0.53333333rem;
 }
+.active {
+  color: lightseagreen;
+}
+.home_list {
+  padding-top: 2.02666667rem;
+  padding-bottom: 1.33333333rem;
+}
+.home_content {
+  padding: 0 10px 10px 10px;
+  border-top: 1px solid #cccccc;
+}
+.home_content .tag {
+  width: 2.13333333rem;
+  height: 0.66666667rem;
+  text-align: center;
+  line-height: 0.66666667rem;
+  color: #ffffff;
+  background-color: #888;
+  border-radius: 0 0 5px 5px;
+}
+.home_content h3 {
+  font-size: 15px;
+  color: #444;
+  padding: 5px 0;
+}
+.home_content .post1 p {
+  color: #888;
+  line-height: 0.64rem;
+  text-indent: 2em;
+}
+.home_content .post2 {
+  overflow: hidden;
+}
+.home_content .post2 p {
+  color: #888;
+  width: 7.46666667rem;
+  height: 2rem;
+  line-height: 0.64rem;
+  text-indent: 2em;
+}
+.home_content .post2 img {
+  width: 1.86666667rem;
+}
+.home_content .post3 ul {
+  display: flex;
+}
+.home_content .post3 ul li {
+  flex: 1;
+  text-align: center;
+}
+.home_content .post3 ul li img {
+  width: 2.93333333rem;
+}
 body {
   font-size: 0.37333333rem;
+}
+.home_detail {
+  padding-top: 1.70666667rem;
 }
